@@ -1,0 +1,199 @@
+.cart-container {
+  margin: 20px auto;
+  max-width: 900px; /* Increase max-width for larger screens */
+  font-family: 'Arial', sans-serif;
+  background-color: #fff; /* Added a white background to the container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #343a40;
+  font-size: 28px;
+  font-weight: 600; /* Enhanced title styling */
+}
+
+.cart-items {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f8f9fa;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item-image {
+  width: 90px; /* Increased size for better visibility */
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* Add zoom effect on hover */
+}
+
+.cart-item-image:hover {
+  transform: scale(1.1); /* Zoom effect */
+}
+
+.cart-item-details {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.cart-item-details h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #495057;
+  font-weight: 500; /* Make product title slightly bold */
+}
+
+.cart-item-details p {
+  margin: 5px 0;
+  color: #6c757d;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity-controls button {
+  border: none;
+  padding: 8px 12px; /* Larger padding for easier clicking */
+  font-size: 18px;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.quantity-controls button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.cart-summary {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cart-summary h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #343a40;
+  font-weight: 600;
+}
+
+.cart-summary button {
+  margin: 10px 5px;
+  padding: 12px 25px; /* Larger button for easier interaction */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cart-summary button:first-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.cart-summary button:first-child:hover {
+  background-color: #a71d2a;
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+.cart-summary button:last-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.cart-summary button:last-child:hover {
+  background-color: #1c7430;
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 10px; /* Less padding on mobile */
+    max-width: 100%; /* Full width for mobile */
+  }
+
+  .cart-item {
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: flex-start;
+  }
+
+  .cart-item-image {
+    width: 70px; /* Smaller image on mobile */
+    height: 70px;
+  }
+
+  .cart-summary button {
+    width: 100%; /* Full-width buttons on mobile */
+    padding: 15px;
+    font-size: 18px;
+  }
+}
+.remove{
+  background-color: rgba(255, 0, 0, 0.34);
+}
+/* Custom remove button styles */
+.remove {
+  background-color: rgba(255, 0, 0, 0.34); /* Light red background */
+  color: white;
+  padding: 8px 20px; /* Adjust padding for better button size */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background and scale transition */
+  margin-top: 10px;
+}
+
+.remove:hover {
+  background-color: #e60000; /* Darker red background on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.remove:focus {
+  outline: none; /* Removes the default focus outline */
+}
+
+/* Adding a trash icon before the text (using FontAwesome as an example) */
+.remove::before {
+  content: "\f1f8"; /* Unicode for FontAwesome trash icon */
+  font-family: 'FontAwesome';
+  margin-right: 10px;
+  font-size: 18px; /* Icon size */
+}
+
+/* Mobile-specific styling for remove button */
+@media (max-width: 768px) {
+  .remove {
+    font-size: 14px; /* Slightly smaller text on mobile */
+    padding: 8px 15px; /* Reduced padding on mobile */
+  }
+}

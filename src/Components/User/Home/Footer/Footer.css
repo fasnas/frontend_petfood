@@ -1,0 +1,47 @@
+/* Footer general styles */
+.footer {
+    background-color: #000000; /* Dark background */
+    color: #000000; /* White text */
+  }
+  
+  .footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer p {
+    font-size: 14px;
+  }
+  
+  .footer .social-icons a {
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .social-icons a:hover {
+    color: #f8c146; /* Highlight color on hover */
+  }
+  
+  .footer .list-unstyled li {
+    margin-bottom: 5px;
+  }
+  
+  .footer .list-unstyled a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .list-unstyled a:hover {
+    color: #f8c146; /* Highlight color on hover */
+  }
+  .samp{
+    width: 100%;
+    height: 280px;
+  }
+  .sample{
+    text-align: top;
+    align-items: baseline;
+    width: 100%;
+    height: 250px;
+  }

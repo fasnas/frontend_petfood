@@ -1,0 +1,13 @@
+/* Custom styles for the Navbar */
+
+/* Add cursor pointer to login text */
+.cursor-pointer {
+    cursor: pointer;
+  }
+  
+  /* Additional spacing for search bar */
+  .navbar .form-control {
+    max-width: 250px; /* Set a fixed max width */
+  }
+ 
+ 

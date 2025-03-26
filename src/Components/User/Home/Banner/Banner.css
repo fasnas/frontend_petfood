@@ -1,0 +1,55 @@
+.banner {
+  font-family: 'Arial', sans-serif;
+}
+
+.banner .container-fluid {
+  position: relative;
+}
+
+.banner .container-fluid::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.308); 
+  border-radius: 25px; 
+  z-index: 1; 
+}
+
+.banner .d-flex {
+  z-index: 2; 
+}
+
+.banner .text-center {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.banner .text-white {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); 
+}
+
+/* Default for larger screens */
+.banner .container-fluid {
+  background-image: url('https://img.freepik.com/premium-photo/cat-feeding-product_23-2151531356.jpg?w=1060');
+  background-size: cover;
+  background-position: center;
+  height: 570px;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .banner .container-fluid {
+    background-image: url('https://your-mobile-banner-image.jpg'); /* Mobile-friendly image */
+    background-size: contain; /* Adjust size for better fitting */
+    background-position: center;
+    height: 300px; /* Adjust height for mobile */
+  }
+
+  .banner .text-center {
+    font-size: 18px; /* Smaller text size on mobile */
+  }
+}

@@ -1,0 +1,22 @@
+.bg-dark {
+    background-color: #343a40 !important;
+  }
+  
+  .nav-link {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #495057e1;
+    color: #f8f9fa;
+  }
+  
+  .nav-link i {
+    font-size: 20px;
+  }
+  .x{
+    background-color: rgba(0, 0, 0, 0.76);
+  }

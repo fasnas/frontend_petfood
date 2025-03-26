@@ -1,0 +1,35 @@
+.revenue-report {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .revenue-report h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .revenue-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .revenue-table th,
+  .revenue-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: right;
+  }
+  
+  .revenue-table th {
+    text-align: left;
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .revenue-table .bold {
+    font-weight: bold;
+  }
+  

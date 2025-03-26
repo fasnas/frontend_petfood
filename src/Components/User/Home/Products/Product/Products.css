@@ -1,0 +1,74 @@
+General container for products
+.products-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Flex container for the product list */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  /* Individual product item style */
+  .product-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 1200px) {
+    .product-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .product-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .product-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  .btns{
+    background-color: #273a3f30;
+  }
+  
+  .category-buttons {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    margin-bottom: 10px; /* Adds spacing below the buttons */
+    gap:5px; /* Adds spacing between the buttons */
+    margin-top: 20px;
+  }
+  
+  .category-buttons .btn {
+    padding: 10px 20px; /* Adds padding for a better look */
+    font-size: 16px; /* Adjusts font size for better readability */
+    border-radius: 8px; /* Rounds the button corners */
+    transition: background-color 0.3s, transform 0.3s; /* Adds hover effects */
+  }
+  
+  .category-buttons .btn:hover {
+    background-color: #007bff; /* Changes background color on hover */
+    color: white; /* Ensures text is visible */
+    transform: scale(1.1); /* Slightly enlarges the button on hover */
+  }
+  
